@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Our Beautiful Oceam </title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript" src="in-view.min.js"></script>
+  <script type="text/javascript" src="index.js"></script>
+</head>
+<body id="background">
+<audio controls id="audioOne">
+  <source src="song1.mp3" autoplay loop type="audio/mpeg">
+</audio>
+
+<style type="text/css">
+  #buttonOne{
+    width: 50px;
+    height: 20px;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    left: 600px;
+    top: 300px;
+    background-color: red;
+    z-index: 100;
+    font-size:25px;
+    font-family: GTZirkonTrial-Book;
+
+  border: 5px solid transparent;
+  background: #AED6D1;
+  color: #55706D;
+  border-radius: 40px;
+  padding: 20px 40px;
+  overflow: hidden;
+  width: 400px;
+  transition: all        1.2s, border     0.5s 1.2s, box-shadow 0.3s 1.5s;
+  white-space: nowrap;
+  text-indent: 2px;
+  font-weight: bold;}
+
+#buttonOne:hover {
+  text-indent: 0;
+  background: #55706D;
+  color: #FFE8A3;
+  width: 300px;
+  border: 10px solid #8DCCC4;
+  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.15);
+}
+#buttonOne:hover span {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
+  }
+
+  #audioOne {
+    display: none;
+  }
+
+</style>
+
+<div id="buttonOne">PRESS ME TO PLAY!</div>
+
+<img class="pic4" id="pic4" src="https://i.huffpost.com/gen/1840718/thumbs/o-DARK-SEA-900.jpg?6" alt="gif0"> 
+<img class="pic1" src="https://media.giphy.com/media/12ffdI8DuUi2RO/giphy.gif" alt="gif3"> 
+<div class="container1 text1 text-focus-in"> THE OCEAN </div> 
+<div class="container2 text2"> 
+  <div class="centerText1">
+    Vast, mysterious, and haunting, the ocean has inspired many due to its sheer size, power, and unremitting beauty.
+    </br>
+    </br>
+    Not only is the ocean teeming with precious marine life, it's the lifeblood of planet Earth itself, providing us with oxygen, absorbing carbon, and covering over three-quarters of Earth.
+   </div>
+ </div>
+<div class="container1 text3"> An estimated 2.2 million species live in the ocean. </div>
+<img class="pic1" src="https://media.giphy.com/media/jmqYXVzxO24Mw/giphy.gif" alt="ocean2">
+
+<img class="pic1" src="https://media.giphy.com/media/3GBXzVKs6UOvFUv2Aq/giphy.gif" alt="gif1">
+<img class="pic1" src="https://media.giphy.com/media/pyvLF2ZKJRT0ZQmERG/giphy.gif" alt="gif2">
+<img class="pic1" src="https://media.giphy.com/media/5wFUwyS8eKlCrNMjtN/giphy.gif" alt="gif8">
+
+
+
+
+<audio controls>
+  <source src="song2.mp3" type="audio/mpeg">
+</audio>
+<img class="pic2" src="https://media.giphy.com/media/xUOwGhPw2QTlp6jNQY/giphy.gif" alt="gif4">
+<img class="pic2" src="https://media.giphy.com/media/7JO7aRfUw8MAYHu1Qz/giphy.gif" alt="gif5">
+<div class="text3"> All told, more than 75 percent of Earth’s tropical reefs experienced bleaching-level heat stress between 2014 and 2017, and at nearly 30 percent of reefs, it reached mortality level. The scientists summarized the event in stark terms: More than half of affected reef areas were impacted at least twice. This global event has punctuated the recent acceleration of mass bleaching. Occurring at an average rate of once every 25–30 years in the 1980s, mass bleaching now returns about every six years and is expected to further accelerate…. Severe bleaching is now occurring more quickly than reefs can recover, with severe downstream consequences to ecosystems and people. </div>
+<img class="pic2" src="https://media.giphy.com/media/dn160lVpfj09pUgUFm/giphy.gif" alt="gif6">
+<img class="pic2" src="https://media.giphy.com/media/7IKFAqoOCK418eqn7u/giphy.gif" alt="gif7">
+
+
+<ul class="menu">
+  <li><a href="#">C</a></li>
+  <li><a href="#">O</a></li>
+  <li><a href="#">R</a></li>
+  <li><a href="#">A</a></li>
+  <li><a href="#">L</a></li>
+  <li><a href="#">S</a></li>
+  <li class="bg"></li>
+</ul>
+
+<script type="text/javascript">
+  var player = document.getElementById("audioOne");
+  var button = document.getElementById("buttonOne");
+  var pic4 = document.getElementById("pic4");
+  button.addEventListener("click", function(){
+    button.style.display = "none";
+    player.play();
+    pic4.style.filter = "none";
+  });
+</script>
+</body>
+</html>
